@@ -35,6 +35,7 @@ $routes->get('/', 'User::index');
 
 $routes->get('/administrator', 'Administrator::index', ['filter' => 'role:administrator']);
 $routes->get('/administrator/index', 'Administrator::index', ['filter' => 'role:administrator']);
+$routes->get('/user_list', 'Administrator::user_list', ['filter' => 'role:administrator']);
 
 /*
  * --------------------------------------------------------------------

@@ -8,4 +8,8 @@ class Administrator extends BaseController
     {
         return view('user/index');
     }
+    public function user_list()
+    {
+        return view('administrator/user_list');
+    }
 }

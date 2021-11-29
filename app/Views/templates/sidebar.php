@@ -13,7 +13,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?=base_url()?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -60,7 +60,7 @@
         <div id="userManagement" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">User</h6>
-                <a class="collapse-item" href="buttons.html">User List</a>
+                <a class="collapse-item" href="<?=base_url('/user_list')?>">User List</a>
                 <a class="collapse-item" href="cards.html">Hak Akses User</a>
             </div>
         </div>
