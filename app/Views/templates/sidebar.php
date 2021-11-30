@@ -58,5 +58,18 @@
             <span>User List</span>
         </a>
     </li>
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Bus Management
+    </div>
+
+    <!-- Nav Item - User Management -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="<?=base_url('/bus_list')?>" aria-expanded="true"
+            aria-controls="userManagement">
+            <i class="fas fa-bus"></i>
+            <span>Bus List</span>
+        </a>
+    </li>
     <?php endif; ?>
 </ul>
