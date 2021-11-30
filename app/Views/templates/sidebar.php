@@ -37,8 +37,8 @@
         <div id="penjualanTiket" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Penjualan Tiket</h6>
-                <a class="collapse-item" href="buttons.html">Jadwal</a>
-                <a class="collapse-item" href="cards.html">Laporan</a>
+                <a class="collapse-item" href="<?=base_url('user/tiket_list')?>">Jadwal</a>
+                <a class="collapse-item" href="<?=base_url('/tiket_list')?>">Laporan</a>
             </div>
         </div>
     </li>

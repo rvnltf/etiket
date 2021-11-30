@@ -33,7 +33,12 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'User::index');
 
-$routes->group('/', function ($routes) {
+$routes->group('user', function ($routes) {
+    $routes->get('/', 'User::index');
+    $routes->get('/tiket_list', 'User::tiket_list');
+});
+
+$routes->group('administrator', function ($routes) {
     $routes->get('/', 'Administrator::index', ['filter' => 'role:administrator']);
     $routes->get('/index', 'Administrator::index', ['filter' => 'role:administrator']);
     $routes->get('/user_list', 'Administrator::user_list', ['filter' => 'role:administrator']);
