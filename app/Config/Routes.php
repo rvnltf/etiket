@@ -32,6 +32,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'User::index');
+$routes->get('/tiket', 'Tiket::index');
 
 $routes->group('user', function ($routes) {
     $routes->get('/', 'User::index');
