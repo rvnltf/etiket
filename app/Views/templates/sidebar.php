@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?=base_url()?>">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-ticket-alt"></i>
         </div>
@@ -52,18 +52,11 @@
 
     <!-- Nav Item - User Management -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#userManagement" aria-expanded="true"
+        <a class="nav-link collapsed" href="<?=base_url('/user_list')?>" aria-expanded="true"
             aria-controls="userManagement">
-            <i class="fas fa-ticket-alt"></i>
-            <span>User</span>
+            <i class="fas fa-users"></i>
+            <span>User List</span>
         </a>
-        <div id="userManagement" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">User</h6>
-                <a class="collapse-item" href="<?=base_url('/user_list')?>">User List</a>
-                <a class="collapse-item" href="cards.html">Hak Akses User</a>
-            </div>
-        </div>
     </li>
     <?php endif; ?>
 </ul>

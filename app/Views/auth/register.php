@@ -12,7 +12,7 @@
                         <div class="form-floating mb-3">
                             <input type="text"
                                 class="form-control <?php if(session('errors.firstname')) : ?>is-invalid<?php endif ?>"
-                                name="firstname" id="firstname" placeholder="<?=lang('Auth.firstname')?>"
+                                name="firstname" id="firstname" placeholder="First name"
                                 value="<?= old('firstname') ?>">
                             <label for="firstname">First name</label>
                         </div>
@@ -21,7 +21,7 @@
                         <div class="form-floating mb-3">
                             <input type="text" id="lastname"
                                 class="form-control <?php if(session('errors.lastname')) : ?>is-invalid<?php endif ?>"
-                                name="lastname" placeholder="<?=lang('Auth.lastname')?>" value="<?= old('lastname') ?>">
+                                name="lastname" placeholder="Lastname" value="<?= old('lastname') ?>">
                             <label for="lastname">Last name</label>
                         </div>
                     </div>
